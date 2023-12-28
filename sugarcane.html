@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Agro-Marketing</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="ricestyle.css">
+
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined"></span> SUGARCANE
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="aboutsugarcane.html" target="_blank">
+              <span class="material-icons-outlined"></span> About
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="howtogrowsugarcane.html" target="_blank">
+              <span class="material-icons-outlined"></span> How to Grow
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="previous&presentsugarcane.html" target="_blank">
+              <span class="material-icons-outlined"></span> previous & present Year Market Price
+            </a>
+          </li>
+          
+          <li class="sidebar-list-item">
+            <a href="whichseasonisbettersugarcane.html" target="_blank">
+              <span class="material-icons-outlined"></span> Which Season is better 
+            </a>
+          </li>
+          
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Top Picks In karnataka</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Sugarcane</p>
+              <span class="material-icons-outlined text-blue"></span>
+            </div>
+            <span class="text-primary font-weight-bold">Rs.32/1kg<br>Rs.3050 per tone</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">coconut</p>
+              <span class="material-icons-outlined text-orange"></span>
+            </div>
+            <span class="text-primary font-weight-bold">Rs.250/1kg<br>Rs.25000/Quintal</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Mango</p>
+              <span class="material-icons-outlined text-green"></span>
+            </div>
+            <span class="text-primary font-weight-bold">Rs.70/1kg<br>Rs.7000/Quintal</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">watermelon</p>
+              <span class="material-icons-outlined text-red"></span>
+            </div>
+            <span class="text-primary font-weight-bold">Rs.25/kg<br>Rs.4500/Quintal</span>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+            <div class="charts-card">
+              <p class="chart-title">SUGARCANE  Price</p>
+              <div id="bar-chart"></div>
+            </div>
+  
+            <div class="charts-card">
+              <p class="chart-title">PRESENT prices & Previous Yesr Price</p>
+              <div id="area-chart"></div>
+            </div>
+  
+          </div>
+        </main>
+        <!-- End Main -->
+  
+      </div>
+  
+      <!-- Scripts -->
+      <!-- ApexCharts -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+      <!-- Custom JS -->
+      <script src="sugarcanechart1.js"></script>
+    </body>
+  </html>
